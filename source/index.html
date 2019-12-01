@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Gravity</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FiraSans-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FiraSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/script.min.js" defer></script>
 </head>
 <body>
-
+  <header class="page-header">
+    <a class="page-header__logo" href="/">
+      <img class="page-header__logo-image" src="img/logo.svg" alt="Gravity">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="/">Home</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="/">Contacts</a>
+        </li>
+      </ul>
+      <button class="main-nav__button" aria-label="toggle menu"></button>
+    </nav>
+    <section class="first-page">
+      <div class="first-page__wrapper">
+        <h2 class="first-page__subtitle">Shooting stars</h2>
+        <h1 class="first-page__title">Pictures In The Sky</h1>
+        <p class="first-page__text">Many people has the notion that enlightenment is one state. Many also believe that
+          when it is attained, a person is forever in that state.</p>
+        <div class="first-page__btns-wrapper">
+          <a class="first-page__link" href="/">Get started</a>
+          <ul class="first-page__social-list social">
+            <li class="social__item">
+              <a class="social__link" href="/" target="_blank" rel="noreferrer noopener">
+                <svg class="social__svg social__svg--twitter" width="16" height="14">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="/" target="_blank" rel="noreferrer noopener">
+                <svg class="social__svg social__svg--linkedin" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="/" target="_blank" rel="noreferrer noopener">
+                <svg class="social__svg social__svg--google" width="14" height="14">
+                  <use xlink:href="img/sprite.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="pagination">
+          <li class="pagination__item pagination__item--active"><a>1</a></li>
+          <li class="pagination__item"><a href="#">2</a></li>
+          <li class="pagination__item"><a href="#">3</a></li>
+        </ul>
+      </div>
+      <picture>
+        <source type="image/webp" srcset="img/img-girl-header@1x.webp 1x, img/img-girl-header@2x.webp 2x">
+        <img class="about__img" src="img/img-girl-header@1x.jpg" srcset="img/img-girl-header@2x.jpg 2x"
+             alt="Girl face">
+      </picture>
+    </section>
+  </header>
 </body>
 </html>
