@@ -1,0 +1,16 @@
+.social {
+  @include reset-list();
+
+  display: flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.social__link {
+  &:hover .social__svg,
+  &:focus .social__svg {
+    fill: $blue;
+  }
+}
