@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,12 +15,12 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="/">
-      <img class="page-header__logo-image" src="img/logo.svg" alt="Gravity">
+      <img class="page-header__logo-image" src="img/logo.svg" width="75" height="24" alt="Gravity">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="/">Home</a>
+          <a class="site-list__link site-list__link--active" href="/">Home</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="/">Contacts</a>
@@ -60,15 +60,21 @@
             </li>
           </ul>
         </div>
-        <ul class="page-header__pagination pagination">
-          <li class="pagination__item pagination__item--active"><a>1</a></li>
-          <li class="pagination__item"><a href="#">2</a></li>
-          <li class="pagination__item"><a href="#">3</a></li>
+        <ul class="first-page__pagination pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
         </ul>
       </div>
-      <picture>
+      <picture class="first-page__img-wrapper">
         <source type="image/webp" srcset="img/img-girl-header@1x.webp 1x, img/img-girl-header@2x.webp 2x">
-        <img class="page-header__img" src="img/img-girl-header@1x.jpg" srcset="img/img-girl-header@2x.jpg 2x"
+        <img class="first-page__img" src="img/img-girl-header@1x.jpg" srcset="img/img-girl-header@2x.jpg 2x"
              alt="Girl face">
       </picture>
     </section>

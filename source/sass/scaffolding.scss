@@ -19,10 +19,12 @@ img {
 
 body {
   margin: 0 auto;
+  overflow-x: hidden;
 
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   font-family: $font;
   color: $main-text;
+  background-color: $main-bg;
 }

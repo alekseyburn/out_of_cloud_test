@@ -1,0 +1,27 @@
+.site-list {
+  @include reset-list();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-list__item {
+  &:not(:last-child) {
+    margin-right: 80px;
+  }
+}
+
+.site-list__link {
+  display: block;
+
+  color: rgba($main-text, 0.3);
+
+  &--active {
+    color: rgba($main-text, 1);
+  }
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+}
